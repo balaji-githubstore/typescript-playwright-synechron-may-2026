@@ -17,7 +17,7 @@ await page.goto("https://opensource-demo.orangehrmlive.com/");
 //     //click
 // }
 
-//check for new popup event
+//check for new popup event - start traking new popup
 let popup=page.waitForEvent("popup")
 
 //click on OrangeHRM, Inc which opens new popup (tab or window)

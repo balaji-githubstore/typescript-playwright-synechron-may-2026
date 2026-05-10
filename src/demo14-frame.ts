@@ -17,7 +17,7 @@ const [newPage,] = await Promise.all([
     page.waitForEvent("popup"),
     marketingFrame.locator("//a[normalize-space()='Get free CRM']").click()
 ])
-await newPage.waitForLoadState();
+await newPage.waitForLoadState()
 
 console.log(await newPage.title())
 
@@ -27,6 +27,8 @@ await newPage.locator("css=input[name='firstName']").fill("jack")
 //enter lastname
 //enter jobtitle 
 //Next
+await newPage.locator("css=button[data-testid='next-step-button']").click();
+await newPage.locator("button",{hasText:"Next"}).click();
 
 await page.waitForTimeout(5000);
 await browser.close();
