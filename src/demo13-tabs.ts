@@ -1,4 +1,4 @@
-import { chromium } from "playwright"
+import { chromium, Page } from "playwright"
 
 const browser = await chromium.launch({ headless: false, channel: "chrome" });
 const context = await browser.newContext();
@@ -22,6 +22,20 @@ console.log(await newPage.title())
 
 await newPage.locator("xpath=//button[text()='Book a Free Demo']/parent::a").click()
 await newPage.locator("xpath=//input[@name='FullName']").fill("synechron");
+
+
+// let pages= context.pages()
+// let pageGoogle:Page
+
+// for(let page of pages)
+// {
+//     if(await page.title()=="Google")
+//     {
+//         pageGoogle=page;
+//         break;
+//     }
+// }
+// //here it will point to pageGoogle
 
 await page.waitForTimeout(5000);
 await browser.close();
