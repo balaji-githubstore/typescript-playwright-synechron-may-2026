@@ -11,7 +11,8 @@ const page=await context.newPage();
 
 await page.goto("https://www.google.com/");
 
-console.log(await page.title())
+let actualTitle:string=await page.title()
+console.log(actualTitle)
 
 await page.waitForTimeout(5000);
 browser.close();
