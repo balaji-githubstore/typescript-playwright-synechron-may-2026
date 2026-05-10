@@ -11,6 +11,8 @@ const page=await context.newPage();
 
 await page.goto("https://www.salesforce.com/in/form/signup/sales-ee/",{timeout:50000});
 
+// page.setDefaultTimeout(50000);
+
 await page.locator("xpath=//input[@name='UserFirstName']").fill("jack@gmail.com");
 await page.locator("xpath=//input[@name='UserLastName']").fill("jack123");
 await page.locator("xpath=//input[contains(@id,'UserTitle')]").fill("trainer");
@@ -51,7 +53,5 @@ await page.locator("xpath=//div[@class='msaCheckbox checkboxInput section']//div
 let actualError:string= await page.locator("xpath=//span[contains(text(),'valid phone')]").innerText()
 console.log(actualError)
 
-
 await page.waitForTimeout(5000);
-browser.close();
-browser.close();
+await browser.close();
