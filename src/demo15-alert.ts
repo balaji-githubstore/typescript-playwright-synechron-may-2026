@@ -11,9 +11,8 @@ await page.on("dialog", async dialog => {
     await dialog.accept();
 })
 
-
 await page.locator("xpath=//a[text()='Calculate Fee']").click();
-
 
 await page.waitForTimeout(5000);
 await browser.close();
+
