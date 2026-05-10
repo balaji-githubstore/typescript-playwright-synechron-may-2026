@@ -5,8 +5,6 @@ const context = await browser.newContext();
 const page = await context.newPage();
 await page.goto("https://www.ilovepdf.com/pdf_to_word");
 
-
-
 const [fileChooser,] = await Promise.all([
     page.waitForEvent("filechooser"),
     page.locator("//a[@id='pickfiles']").click()

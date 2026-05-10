@@ -12,6 +12,7 @@ await page.on('filechooser',async filechooser=>{
 
 await page.locator("//a[@id='pickfiles']").click();
 
+await page.locator("My Account").hover()
 await page.waitForTimeout(5000);
 await browser.close();
 

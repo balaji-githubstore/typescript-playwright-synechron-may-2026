@@ -1,0 +1,66 @@
+XPATH 
+
+Absolute XPath - (not recommended) - /html/body/div[2]/main/div/section/div[1]/article/div/sf-offer//sf-free-trial-offer//div/div/div[2]/div[2]/div/form/div/div[1]/div[1]/div[1]/input
+
+Relative XPath - 
+
+//tagname[@attribute='']
+//tagname[text()='']
+
+Contains
+//tagname[contains(@attribute,'')]
+//tagname[contains(text(),'')]
+
+Grouping of xpath - starts at 1
+(//div[@class='checkbox-ui'])[2]
+
+normalize-space
+
+
+And-or
+
+parent-child
+parent - //button[text()='Book a Free Demo']/parent::a
+//button[text()='Book a Free Demo']/..
+
+ancestor-descendant
+
+
+following - preceding 
+(//input[@name='UserEmail']/following::div[@class='checkbox-ui'])[1]
+
+
+following sibling 
+//input[@id='SubscriptionAgreement']/following-sibling::div[@class='checkbox-ui']
+
+
+Example:  verify in chrome - ctrl+f
+//input[@name='UserFirstName']
+
+//input[contains(@id,'UserTitl')]
+
+
+//span[contains(text(),'valid phone')]
+//a[contains(text(),'Get free CRM')]
+
+-----------------------------------------
+CSS Selector 
+#id
+.classname
+tagname[attribute='']
+[attribute='']
+
+Example:
+input[name='firstName']
+[data-testid='next-step-button']
+-------------------------------------------------
+
+
+descendant 
+[class="wes:mt-2"] button[data-testid='next-step-button']
+
+
+
+
+
+
