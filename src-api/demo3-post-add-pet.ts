@@ -21,10 +21,11 @@ const reqBody={
   "status": "available"
 }
 
-
-
-const response=await apiContext.post(`https://petstore.swagger.io/v2/pet`,{data:reqBody,headers:{"Content-Type":"application/json"}})
+const response=await apiContext.post(`https://petstore.swagger.io/v2/pet`,
+    {data:reqBody,headers:{"Content-Type":"application/json"}})
 
 console.log(response.status());
 
-console.log(await response.json())
+const responseBody=await response.json();
+console.log(responseBody)
+console.log(responseBody.id)
