@@ -32,7 +32,6 @@ for (let p = 1; p <= 6; p++) {
     await page.locator(`xpath=//button[@aria-label="Next"]`).click();
 }
 
-
 //click 
 await page.locator(`xpath=//button[@aria-label="Next"]`).click();
 
