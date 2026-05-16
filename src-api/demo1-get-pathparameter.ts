@@ -8,11 +8,12 @@ const response=await apiContext.get(`https://petstore.swagger.io/v2/pet/${petId}
 
 console.log(response.status());
 
-const responseBody=await response.json();
+const responseBody=await response.json()
 console.log(responseBody)
 
 console.log(responseBody.id)
 console.log(responseBody.category.id)
+
 
 // deserialize to class model
 //object/string - converting object to particular Pet class (object)--> 
