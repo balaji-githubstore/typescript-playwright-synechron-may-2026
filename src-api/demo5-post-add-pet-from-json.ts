@@ -16,3 +16,5 @@ const responseBody=await response.json();
 console.log(responseBody)
 console.log(responseBody.id)
 
+console.log(await response.text())
+

@@ -1,7 +1,7 @@
 import { chromium, Page } from "playwright"
 
 const browser = await chromium.launch({ headless: false, channel: "chrome" });
-const context = await browser.newContext();
+const context = await browser.newContext({viewport:{width:600,height:600}});
 const page = await context.newPage();
 await page.goto("https://www.ilovepdf.com/pdf_to_word");
 
