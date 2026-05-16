@@ -23,6 +23,8 @@ parent-child
 parent - //button[text()='Book a Free Demo']/parent::a
 //button[text()='Book a Free Demo']/..
 
+child - //table[@id='example']/tbody/tr[2]/td[2]
+
 ancestor-descendant
 
 
@@ -60,7 +62,11 @@ descendant
 [class="wes:mt-2"] button[data-testid='next-step-button']
 
 
+row count
+//table[@id='example']/tbody/tr
 
 
+column count 
+//table[@id='example']/tbody/tr[1]/td
 
 

@@ -1,0 +1,13 @@
+// {
+// 	"servers": {
+// 		"filesystem": {
+// 			"command": "npx",
+// 			"args": [
+// 				"-y",
+// 				"@modelcontextprotocol/server-filesystem",
+// 				"D:\\Mine\\Company\\InfoVision Apr 2026"
+// 			]
+// 		}
+// 	},
+// 	"inputs": []
+// }
