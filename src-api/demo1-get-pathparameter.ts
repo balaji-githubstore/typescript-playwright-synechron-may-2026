@@ -10,10 +10,8 @@ console.log(response.status());
 
 const responseBody=await response.json()
 console.log(responseBody)
-
 console.log(responseBody.id)
 console.log(responseBody.category.id)
 
-
-// deserialize to class model
-//object/string - converting object to particular Pet class (object)--> 
+//deserialize to Pet class - model or pojo class
+//data driven framework (taking from json or excel)
