@@ -1,11 +1,19 @@
-export class Employee {
+class Demo{
+    public a:number=10
+    constructor()
+    {
+        console.log("parent constructor")
+    }
+}
+export class Employee extends Demo {
     private static _companyName: string;
-    private _id: number;
+    private readonly _id: number;
     private _name: string;
     private _salary: number;
     private _performance: string;
     
     constructor(id: number, name: string, salary: number, performance: string) {
+        super()
         this._id = id;
         this._name = name;
         this._salary = salary;

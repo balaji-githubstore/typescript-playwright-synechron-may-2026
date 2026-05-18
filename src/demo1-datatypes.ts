@@ -58,4 +58,37 @@ let browserDetail:{
 
 browserDetail={name:"firefox",version:9.1,isMobile:true}
 
+console.log(browserDetail.name)
+
 // custom type
+
+
+let items:number[]=[3,4,55.5,66]
+
+for(let i=0;i<items.length;i++)
+{
+    console.log(items[i])
+}
+
+for(const item of items)
+{
+    console.log(item)
+}
+
+
+const invalidLoginData=[
+    {username:"john",password:"john123",expectedError:"Invalid credentials"},
+    {username:"saul",password:"saul123",expectedError:"Invalid credentials"},
+    {username:"saul222",password:"saul123",expectedError:"Invalid credentials"}
+]
+
+
+console.log(invalidLoginData[0]?.username)
+
+
+for( const {username,password,expectedError} of invalidLoginData)
+{
+    console.log(username)
+    console.log(password)
+    console.log(expectedError)
+}

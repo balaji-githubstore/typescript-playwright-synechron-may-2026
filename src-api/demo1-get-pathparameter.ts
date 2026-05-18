@@ -1,4 +1,5 @@
 import {APIRequestContext, request} from "playwright"
+import { Pet } from "./Pet.js";
 
 const apiContext= await request.newContext()
 
@@ -14,4 +15,7 @@ console.log(responseBody.id)
 console.log(responseBody.category.id)
 
 //deserialize to Pet class - model or pojo class
-//data driven framework (taking from json or excel)
+const responsePet=await response.json() as Pet
+console.log(responsePet.id)
+console.log(responsePet.category.id)
+console.log(responsePet.tags[0]?.id)

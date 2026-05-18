@@ -17,6 +17,8 @@ Grouping of xpath - starts at 1
 normalize-space - ignore white space before/after text 
 //tagname[normalize-space()='']
 //tagname[contains(normalize-space(),'')]
+
+
 And-or
 
 parent-child
@@ -70,3 +72,25 @@ column count
 //table[@id='example']/tbody/tr[1]/td
 
 
+--------------------
+LoginPage - class
+	enterUsername(string)
+	enterPassword(string)
+	clickOnLogin()
+	clickOnForgotPassword()
+	getLoginHeader()
+	getInvalidLoginError()
+
+Dashboard
+	getDashboardHeader()
+	clickOnPendingSelfReview()
+
+MainPage - All common elements like menu, profile
+
+
+
+
+-------------------------------------------
+
+john,john123,Invalid credentials
+saul,saul123,Invalid credentials

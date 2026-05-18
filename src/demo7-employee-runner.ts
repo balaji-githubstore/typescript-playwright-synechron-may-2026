@@ -7,6 +7,7 @@ let emp1=new Employee(101, "jack", 5000, "Excellent")
 let emp2=new Employee(102, "Saul", 8000, "Average")
 
 
+
 emp2.displayEmployeeDetail();
 
 emp1.displayEmployeeDetail();
@@ -19,3 +20,6 @@ console.log(myName)
 
 
 let emp3:Employee=Employee.getEmployeeInstance()
+
+
+console.log(emp1.a)
